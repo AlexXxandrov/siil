@@ -5,6 +5,8 @@ import Hero from '@/components/Hero';
 import AIChatbots from '@/components/AIChatbots';
 import Services from '@/components/Services';
 import WebPortfolio from '@/components/WebPortfolio';
+import ChatbotsShowcase from '@/components/ChatbotsShowcase';
+import WebApps from '@/components/WebApps';
 import DataRecovery from '@/components/DataRecovery';
 import Marketing from '@/components/Marketing';
 import About from '@/components/About';
@@ -26,12 +28,14 @@ function App() {
         <AIChatbots />
         <Services />
         <WebPortfolio />
+        <ChatbotsShowcase />
+        <WebApps />
         <DataRecovery />
         <Marketing />
         <About />
         <Contact />
         <Footer />
-        <WhatsAppButton phoneNumber="521724672724" />
+        <WhatsAppButton />
         <Toaster />
       </div>
     </>
