@@ -1,17 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Globe, Layout, ShoppingBag, Utensils, Building2, GraduationCap, Stethoscope } from 'lucide-react';
+import { Globe, Layout, ShoppingBag, Utensils, Building2, GraduationCap, Stethoscope } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { toast } from '@/components/ui/use-toast';
 
 const PortfolioItem = ({ title, category, description, image, icon: Icon, delay }) => {
-  const handleVisit = () => {
-    toast({
-      title: "Visitando Sitio Demo",
-      description: `Abriendo la demostración de ${title}. En un proyecto real, esto abriría el sitio web en vivo.`,
-    });
-  };
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -36,16 +28,9 @@ const PortfolioItem = ({ title, category, description, image, icon: Icon, delay 
           <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
             {title}
           </h3>
-          <p className="text-sm text-gray-300 line-clamp-2 mb-4">
+          <p className="text-sm text-gray-300 line-clamp-2">
             {description}
           </p>
-          <Button 
-            onClick={handleVisit}
-            size="sm" 
-            className="w-full bg-white/10 hover:bg-cyan-500 hover:text-white transition-all duration-300 group-hover:shadow-lg group-hover:shadow-cyan-500/25"
-          >
-            Ver Proyecto <ExternalLink className="w-4 h-4 ml-2" />
-          </Button>
         </div>
       </div>
     </motion.div>

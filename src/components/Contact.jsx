@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -75,12 +75,6 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    {
-      icon: Phone,
-      title: 'Ing. Alexandro León - Teléfono',
-      value: '722 46 72 724',
-      color: 'from-cyan-500 to-blue-600'
-    },
     {
       icon: Mail,
       title: 'Email',

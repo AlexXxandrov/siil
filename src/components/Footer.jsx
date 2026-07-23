@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Monitor, Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { Monitor, Facebook, Instagram, Twitter, Linkedin, Mail, MapPin, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -104,10 +104,6 @@ const Footer = () => {
             <span className="text-xl font-bold text-gradient mb-6 block">Contacto</span>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400">
-                <Phone className="w-5 h-5 text-cyan-400 mt-0.5" />
-                <span>722 46 72 724</span>
-              </li>
-              <li className="flex items-start gap-3 text-gray-400">
                 <Mail className="w-5 h-5 text-cyan-400 mt-0.5" />
                 <span>contacto@leao.com.mx</span>
               </li>
@@ -116,7 +112,7 @@ const Footer = () => {
                 <span>Toluca, México</span>
               </li>
               <li className="flex items-start gap-3 text-gray-400 hover:text-green-400 transition-colors">
-                <a href="https://wa.me/5217224672724/?text=Me interesa saber más de sus servicios." target="_blank" rel="noopener noreferrer" className="flex items-start gap-3">
+                <a href="https://wa.me/527225596407?text=Me interesa saber más de sus servicios." target="_blank" rel="noopener noreferrer" className="flex items-start gap-3">
                   <MessageCircle className="w-5 h-5 text-green-400 mt-0.5" />
                   <span>WhatsApp</span>
                 </a>

@@ -1,16 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Zap, Globe, Sparkles } from 'lucide-react';
+import { Zap, Globe, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById('contacto');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const scrollToPortfolio = () => {
     const element = document.getElementById('portafolio-web');
     if (element) {
@@ -35,7 +28,6 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* Anuncio Destacado */}
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -80,14 +72,6 @@ const Hero = () => {
 
             <div className="flex flex-wrap gap-4">
               <Button
-                onClick={scrollToContact}
-                size="lg"
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 glow-effect text-lg px-8"
-              >
-                Solicitar Cotización
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button
                 onClick={() => {
                   const element = document.getElementById('servicios');
                   if (element) element.scrollIntoView({ behavior: 'smooth' });
@@ -129,15 +113,16 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative"
           >
-            <div className="relative glass-effect rounded-3xl p-8 glow-effect">
-              <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+            <div className="relative glass-effect rounded-3xl p-4 glow-effect">
+              <div className="text-center mb-3">
+                <span className="text-sm font-bold text-cyan-300">💬 Chatea con Leo — Asistente IA de LEAO</span>
+              </div>
+              <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: '500px' }}>
                 <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/a0VDDW4TDps"
-                  title="Video de presentación de servicios informáticos"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
+                  className="w-full h-full border-0"
+                  src="https://chatbotsiilleao-production.up.railway.app"
+                  title="Leo - Asistente virtual LEAO"
+                  allow="clipboard-write"
                 ></iframe>
               </div>
               
@@ -146,7 +131,7 @@ const Hero = () => {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -top-6 -right-6 glass-effect rounded-2xl p-4 glow-effect"
               >
-                <p className="text-sm font-semibold text-cyan-300">✓ Garantía Incluida</p>
+                <p className="text-sm font-semibold text-cyan-300">✓ Respuestas con IA</p>
               </motion.div>
 
               <motion.div
@@ -154,7 +139,7 @@ const Hero = () => {
                 transition={{ duration: 3, repeat: Infinity, delay: 1 }}
                 className="absolute -bottom-6 -left-6 glass-effect rounded-2xl p-4 glow-effect"
               >
-                <p className="text-sm font-semibold text-purple-300">✓ Servicio Rápido</p>
+                <p className="text-sm font-semibold text-purple-300">✓ Disponible 24/7</p>
               </motion.div>
             </div>
           </motion.div>
