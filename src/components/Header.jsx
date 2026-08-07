@@ -38,12 +38,12 @@ const Header = () => {
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            <div className="bg-gradient-to-br from-cyan-400 to-blue-600 p-2 rounded-lg glow-effect">
+            <div className="bg-gradient-to-br from-orange-400 to-amber-500 p-2 rounded-lg glow-effect">
               <Monitor className="w-8 h-8 text-white" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gradient">LEÂO</h1>
-              <p className="text-xs text-cyan-300">Soluciones Integrales en Informática</p>
+              <p className="text-xs text-orange-300">Soluciones Integrales en Informática</p>
             </div>
           </motion.div>
 
@@ -54,7 +54,7 @@ const Header = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item === 'Inicio' ? 'hero' : item.toLowerCase())}
-                className="text-white/90 hover:text-cyan-400 transition-colors font-medium"
+                className="text-white/90 hover:text-orange-400 transition-colors font-medium"
               >
                 {item}
               </motion.button>
@@ -65,7 +65,7 @@ const Header = () => {
             </a>
             <Button
               onClick={() => scrollToSection('contacto')}
-              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 glow-effect"
+              className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 glow-effect"
             >
               Cotizar Ahora
             </Button>
@@ -89,7 +89,7 @@ const Header = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item === 'Inicio' ? 'hero' : item.toLowerCase())}
-                className="block w-full text-left text-white/90 hover:text-cyan-400 transition-colors py-2 font-medium"
+                className="block w-full text-left text-white/90 hover:text-orange-400 transition-colors py-2 font-medium"
               >
                 {item}
               </button>

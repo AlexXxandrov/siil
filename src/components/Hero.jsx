@@ -13,12 +13,12 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-cyan-600/20 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-600/20 to-amber-500/20 animate-pulse"></div>
       
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-orange-500 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-600 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-purple-600 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-blue-600 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -36,17 +36,17 @@ const Hero = () => {
             >
               <button 
                 onClick={scrollToPortfolio}
-                className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 hover:from-indigo-500/30 hover:to-purple-500/30 border border-indigo-500/30 rounded-full px-4 py-2 pr-6 transition-all duration-300 hover:scale-105 cursor-pointer"
+                className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-blue-600/20 hover:from-blue-500/30 hover:to-blue-600/30 border border-orange-500/30 rounded-full px-4 py-2 pr-6 transition-all duration-300 hover:scale-105 cursor-pointer"
               >
-                <div className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-xs font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white text-xs font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
                   <Sparkles className="w-3 h-3" />
                   NUEVO
                 </div>
-                <span className="text-sm font-medium text-white group-hover:text-indigo-200 transition-colors">
+                <span className="text-sm font-medium text-white group-hover:text-blue-200 transition-colors">
                   Sitios Web Profesionales
                 </span>
-                <Globe className="w-4 h-4 text-indigo-400 ml-1 animate-pulse" />
-                <div className="absolute -right-1 top-1/2 -translate-y-1/2 w-2 h-2 bg-indigo-500 rounded-full animate-ping"></div>
+                <Globe className="w-4 h-4 text-orange-400 ml-1 animate-pulse" />
+                <div className="absolute -right-1 top-1/2 -translate-y-1/2 w-2 h-2 bg-blue-500 rounded-full animate-ping"></div>
               </button>
             </motion.div>
 
@@ -57,7 +57,7 @@ const Hero = () => {
               className="inline-flex items-center gap-2 glass-effect px-4 py-2 rounded-full mb-6"
             >
               <Zap className="w-4 h-4 text-yellow-400" />
-              <span className="text-sm font-semibold text-cyan-300">Soluciones Tecnológicas Profesionales</span>
+              <span className="text-sm font-semibold text-orange-300">Soluciones Tecnológicas Profesionales</span>
             </motion.div>
 
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
@@ -78,7 +78,7 @@ const Hero = () => {
                 }}
                 size="lg"
                 variant="outline"
-                className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 text-lg px-8"
+                className="border-2 border-orange-400 text-orange-400 hover:bg-orange-400/10 text-lg px-8"
               >
                 Ver Servicios
               </Button>
@@ -115,7 +115,7 @@ const Hero = () => {
           >
             <div className="relative glass-effect rounded-3xl p-4 glow-effect">
               <div className="text-center mb-3">
-                <span className="text-sm font-bold text-cyan-300">💬 Chatea con Leo — Asistente IA de LEAO</span>
+                <span className="text-sm font-bold text-orange-300">💬 Chatea con Leo — Asistente IA de LEAO</span>
               </div>
               <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: '500px' }}>
                 <iframe
@@ -131,7 +131,7 @@ const Hero = () => {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -top-6 -right-6 glass-effect rounded-2xl p-4 glow-effect"
               >
-                <p className="text-sm font-semibold text-cyan-300">✓ Respuestas con IA</p>
+                <p className="text-sm font-semibold text-orange-300">✓ Respuestas con IA</p>
               </motion.div>
 
               <motion.div
@@ -139,7 +139,7 @@ const Hero = () => {
                 transition={{ duration: 3, repeat: Infinity, delay: 1 }}
                 className="absolute -bottom-6 -left-6 glass-effect rounded-2xl p-4 glow-effect"
               >
-                <p className="text-sm font-semibold text-purple-300">✓ Disponible 24/7</p>
+                <p className="text-sm font-semibold text-blue-300">✓ Disponible 24/7</p>
               </motion.div>
             </div>
           </motion.div>

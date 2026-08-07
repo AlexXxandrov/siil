@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Send, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -79,19 +79,19 @@ const Contact = () => {
       icon: Mail,
       title: 'Email',
       value: 'contacto@leao.com.mx',
-      color: 'from-purple-500 to-pink-600'
+      color: 'from-blue-600 to-blue-500'
     },
     {
       icon: MapPin,
       title: 'Ubicación',
       value: 'Toluca, México',
-      color: 'from-green-500 to-emerald-600'
+      color: 'from-emerald-500 to-teal-600'
     }
   ];
 
   return (
     <section id="contacto" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/20 to-transparent"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -119,44 +119,44 @@ const Contact = () => {
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-sm font-semibold mb-2 text-cyan-300">Nombre Completo *</label>
+                  <label className="block text-sm font-semibold mb-2 text-orange-300">Nombre Completo *</label>
                   <Input
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     placeholder="Tu nombre"
-                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-cyan-400"
+                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-orange-400"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2 text-cyan-300">Email *</label>
+                  <label className="block text-sm font-semibold mb-2 text-orange-300">Email *</label>
                   <Input
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     placeholder="tu@email.com"
-                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-cyan-400"
+                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-orange-400"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2 text-cyan-300">Teléfono</label>
+                  <label className="block text-sm font-semibold mb-2 text-orange-300">Teléfono</label>
                   <Input
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                     placeholder="722 46 72 724"
-                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-cyan-400"
+                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-orange-400"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2 text-cyan-300">Servicio de Interés</label>
+                  <label className="block text-sm font-semibold mb-2 text-orange-300">Servicio de Interés</label>
                   <select
                     value={formData.service}
                     onChange={(e) => setFormData({...formData, service: e.target.value})}
-                    className="w-full bg-white/5 border border-white/20 text-white rounded-md px-3 py-2 focus:border-cyan-400 focus:outline-none"
+                    className="w-full bg-white/5 border border-white/20 text-white rounded-md px-3 py-2 focus:border-orange-400 focus:outline-none"
                   >
                     <option value="" className="bg-slate-900">Selecciona un servicio</option>
                     <option value="chatbot_escuelas" className="bg-slate-900">Chatbot IA para Escuelas</option>
@@ -174,24 +174,29 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2 text-cyan-300">Mensaje *</label>
+                  <label className="block text-sm font-semibold mb-2 text-orange-300">Mensaje *</label>
                   <Textarea
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     placeholder="Cuéntanos sobre tu proyecto o necesidad..."
                     rows={5}
-                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-cyan-400"
+                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-500 focus:border-orange-400"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 glow-effect text-lg"
+                  className="w-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 glow-effect text-lg"
                 >
                   Enviar Mensaje
                   <Send className="ml-2 w-5 h-5" />
                 </Button>
+
+                <div className="flex items-center justify-center gap-2 text-xs text-gray-400 pt-2">
+                  <Lock className="w-4 h-4 text-emerald-400" />
+                  <span>Tus datos están seguros y son 100% confidenciales</span>
+                </div>
               </form>
             </div>
           </motion.div>
@@ -232,19 +237,19 @@ const Contact = () => {
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">Lunes - Viernes</span>
-                  <span className="font-semibold text-cyan-300">9:00 AM - 7:00 PM</span>
+                  <span className="font-semibold text-orange-300">9:00 AM - 7:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">Sábados</span>
-                  <span className="font-semibold text-cyan-300">10:00 AM - 3:00 PM</span>
+                  <span className="font-semibold text-orange-300">10:00 AM - 3:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-400">Domingos</span>
                   <span className="font-semibold text-red-400">Cerrado</span>
                 </div>
               </div>
-              <div className="mt-6 p-4 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 rounded-xl border border-cyan-400/30">
-                <p className="text-sm text-cyan-300 font-semibold">⚡ Servicio de emergencia 24/7 disponible</p>
+              <div className="mt-6 p-4 bg-gradient-to-r from-orange-500/20 to-blue-600/20 rounded-xl border border-orange-400/30">
+                <p className="text-sm text-orange-300 font-semibold">⚡ Servicio de emergencia 24/7 disponible</p>
               </div>
             </div>
           </motion.div>

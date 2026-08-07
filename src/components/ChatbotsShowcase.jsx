@@ -5,7 +5,7 @@ import { Bot, MessageSquare, Users, Clock, Sparkles, TrendingUp } from 'lucide-r
 const ChatbotsShowcase = () => {
   return (
     <section id="chatbots-showcase" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-900/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/20 to-transparent"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -14,9 +14,9 @@ const ChatbotsShowcase = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 mb-6">
-            <Bot className="w-5 h-5 text-purple-400" />
-            <span className="text-sm font-semibold text-purple-300">Inteligencia Artificial Aplicada</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 border border-blue-500/30 mb-6">
+            <Bot className="w-5 h-5 text-blue-400" />
+            <span className="text-sm font-semibold text-blue-300">Inteligencia Artificial Aplicada</span>
           </div>
 
           <h2 className="text-4xl md:text-6xl font-black mb-6">
@@ -25,7 +25,7 @@ const ChatbotsShowcase = () => {
           </h2>
 
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Da a conocer tu negocio o tus productos <span className="text-cyan-400 font-bold">24/7</span>. 
+            Da a conocer tu negocio o tus productos <span className="text-orange-400 font-bold">24/7</span>. 
             Nuestros asistentes virtuales atienden, capturan leads y convierten visitantes en clientes — sin que tú hagas nada.
           </p>
         </motion.div>
@@ -48,13 +48,13 @@ const ChatbotsShowcase = () => {
                   icon: MessageSquare,
                   title: 'Respuestas Inteligentes',
                   description: 'Responde preguntas sobre tus servicios, precios y disponibilidad con precisión y naturalidad.',
-                  color: 'from-cyan-500 to-blue-600',
+                  color: 'from-orange-500 to-amber-500',
                 },
                 {
                   icon: Users,
                   title: 'Captura de Leads Automática',
                   description: 'Cada prospecto interesado queda registrado automáticamente en tu base de datos.',
-                  color: 'from-purple-500 to-pink-600',
+                  color: 'from-blue-600 to-blue-500',
                 },
                 {
                   icon: Clock,
@@ -93,11 +93,11 @@ const ChatbotsShowcase = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
-              className="mt-8 p-4 glass-effect rounded-xl border border-purple-500/30"
+              className="mt-8 p-4 glass-effect rounded-xl border border-blue-500/30"
             >
               <div className="flex items-center gap-3">
-                <Sparkles className="w-6 h-6 text-purple-400" />
-                <p className="text-sm text-purple-200">
+                <Sparkles className="w-6 h-6 text-blue-400" />
+                <p className="text-sm text-blue-200">
                   <span className="font-bold">¿Lo quieres para tu negocio?</span> Cada chatbot se personaliza con tu marca, tus servicios y tu estilo.
                 </p>
               </div>
@@ -112,11 +112,11 @@ const ChatbotsShowcase = () => {
             transition={{ delay: 0.3 }}
             className="relative"
           >
-            <div className="glass-effect rounded-3xl p-4 border-2 border-purple-500/30 hover:border-purple-400/50 transition-all duration-300">
+            <div className="glass-effect rounded-3xl p-4 border-2 border-blue-500/30 hover:border-blue-400/50 transition-all duration-300">
               <div className="text-center mb-3">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30">
-                  <Bot className="w-4 h-4 text-purple-400" />
-                  <span className="text-sm font-bold text-purple-300">Stella — Asistente IA de Academia Starlet</span>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 border border-blue-500/30">
+                  <Bot className="w-4 h-4 text-blue-400" />
+                  <span className="text-sm font-bold text-blue-300">Stella — Asistente IA de Academia Starlet</span>
                 </div>
               </div>
               <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: '520px' }}>
@@ -137,7 +137,7 @@ const ChatbotsShowcase = () => {
               transition={{ duration: 3, repeat: Infinity }}
               className="absolute -top-4 -right-4 glass-effect rounded-2xl p-3 glow-effect"
             >
-              <p className="text-sm font-semibold text-purple-300">✓ IA Personalizada</p>
+              <p className="text-sm font-semibold text-blue-300">✓ IA Personalizada</p>
             </motion.div>
 
             <motion.div
@@ -145,7 +145,7 @@ const ChatbotsShowcase = () => {
               transition={{ duration: 3, repeat: Infinity, delay: 1.5 }}
               className="absolute -bottom-4 -left-4 glass-effect rounded-2xl p-3 glow-effect"
             >
-              <p className="text-sm font-semibold text-cyan-300">✓ Captura Leads</p>
+              <p className="text-sm font-semibold text-orange-300">✓ Captura Leads</p>
             </motion.div>
           </motion.div>
         </div>

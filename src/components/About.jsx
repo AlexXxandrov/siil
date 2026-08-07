@@ -4,8 +4,8 @@ import { Award, Users, Clock, ThumbsUp } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Award, value: '10+', label: 'Años de Experiencia', color: 'text-cyan-400' },
-    { icon: Users, value: '500+', label: 'Clientes Satisfechos', color: 'text-purple-400' },
+    { icon: Award, value: '10+', label: 'Años de Experiencia', color: 'text-orange-400' },
+    { icon: Users, value: '500+', label: 'Clientes Satisfechos', color: 'text-blue-400' },
     { icon: Clock, value: '24/7', label: 'Soporte Disponible', color: 'text-green-400' },
     { icon: ThumbsUp, value: '98%', label: 'Satisfacción', color: 'text-yellow-400' }
   ];
@@ -13,8 +13,8 @@ const About = () => {
   return (
     <section id="nosotros" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-600/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -39,14 +39,14 @@ const About = () => {
 
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-cyan-400 mt-2"></div>
+                <div className="w-2 h-2 rounded-full bg-orange-400 mt-2"></div>
                 <div>
                   <h4 className="font-bold text-white mb-1">Misión</h4>
                   <p className="text-gray-400">Proporcionar soluciones tecnológicas innovadoras que impulsen el crecimiento de nuestros clientes.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-purple-400 mt-2"></div>
+                <div className="w-2 h-2 rounded-full bg-blue-400 mt-2"></div>
                 <div>
                   <h4 className="font-bold text-white mb-1">Visión</h4>
                   <p className="text-gray-400">Ser la empresa líder en servicios informáticos, reconocida por nuestra excelencia y compromiso.</p>

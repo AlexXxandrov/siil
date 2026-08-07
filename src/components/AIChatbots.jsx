@@ -14,7 +14,7 @@ const FeatureItem = ({ children }) => (
 const ServicePill = ({ icon: Icon, title, description }) => (
   <div className="bg-white/5 border border-white/10 rounded-xl p-4 hover:bg-white/10 transition-all duration-300 group">
     <div className="flex items-start gap-3">
-      <div className="bg-gradient-to-br from-cyan-500 to-blue-600 w-10 h-10 rounded-lg flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+      <div className="bg-gradient-to-br from-orange-500 to-amber-500 w-10 h-10 rounded-lg flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
         <Icon className="w-5 h-5 text-white" />
       </div>
       <div>
@@ -52,7 +52,7 @@ const AIChatbots = () => {
 
   return (
     <section id="chatbots-ia" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-900/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/20 to-transparent"></div>
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDEzNGgyLTJ6bTAtNWgyLTJ6bTAgMTBoMi0yem0wLTIwaDItMnptMCAxMGgyLTJ6bTAtMTVoMi0yem0wIDIwaDItMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -62,9 +62,9 @@ const AIChatbots = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border border-purple-500/30 mb-6">
-            <Bot className="w-5 h-5 text-purple-400" />
-            <span className="text-sm font-semibold text-purple-300">Tecnología de Inteligencia Artificial</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-orange-500/20 border border-blue-500/30 mb-6">
+            <Bot className="w-5 h-5 text-blue-400" />
+            <span className="text-sm font-semibold text-blue-300">Tecnología de Inteligencia Artificial</span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-black mb-6">
@@ -86,7 +86,7 @@ const AIChatbots = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="glass-effect rounded-3xl overflow-hidden border-2 border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 group"
+            className="glass-effect rounded-3xl overflow-hidden border-2 border-blue-500/30 hover:border-blue-400/50 transition-all duration-300 group"
           >
             <div className="relative h-64 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent z-10"></div>
@@ -95,7 +95,7 @@ const AIChatbots = () => {
                 alt="Estudiantes usando tecnología educativa con IA"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute top-4 right-4 bg-gradient-to-br from-purple-500 to-pink-600 px-4 py-2 rounded-full z-20">
+              <div className="absolute top-4 right-4 bg-gradient-to-br from-blue-600 to-blue-500 px-4 py-2 rounded-full z-20">
                 <span className="text-sm font-bold text-white flex items-center gap-1">
                   <Users className="w-4 h-4" />
                   Para Escuelas
@@ -104,12 +104,12 @@ const AIChatbots = () => {
             </div>
 
             <div className="p-8">
-              <h3 className="text-3xl font-black mb-4 text-white group-hover:text-purple-300 transition-colors">
+              <h3 className="text-3xl font-black mb-4 text-white group-hover:text-blue-300 transition-colors">
                 Asistente Virtual con IA para Escuelas
               </h3>
 
-              <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/30 rounded-xl p-4 mb-6">
-                <p className="text-lg font-semibold text-purple-200 leading-relaxed">
+              <div className="bg-gradient-to-r from-blue-500/10 to-blue-600/10 border border-blue-500/30 rounded-xl p-4 mb-6">
+                <p className="text-lg font-semibold text-blue-200 leading-relaxed">
                   Te presenta el Asistente Virtual con IA que atiende prospectos 24/7 — sin que tú hagas nada.
                 </p>
               </div>
@@ -134,7 +134,7 @@ const AIChatbots = () => {
 
               <Button
                 onClick={handleSchoolDemo}
-                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-6 text-lg rounded-xl shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
+                className="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-semibold py-6 text-lg rounded-xl shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
               >
                 <Bot className="w-5 h-5 mr-2" />
                 Solicitar Demo para Escuelas
@@ -148,7 +148,7 @@ const AIChatbots = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="glass-effect rounded-3xl overflow-hidden border-2 border-cyan-500/30 hover:border-cyan-400/50 transition-all duration-300 group"
+            className="glass-effect rounded-3xl overflow-hidden border-2 border-orange-500/30 hover:border-orange-400/50 transition-all duration-300 group"
           >
             <div className="relative h-64 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent z-10"></div>
@@ -157,7 +157,7 @@ const AIChatbots = () => {
                 alt="Equipo de negocios trabajando con tecnología digital"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute top-4 right-4 bg-gradient-to-br from-cyan-500 to-blue-600 px-4 py-2 rounded-full z-20">
+              <div className="absolute top-4 right-4 bg-gradient-to-br from-orange-500 to-amber-500 px-4 py-2 rounded-full z-20">
                 <span className="text-sm font-bold text-white flex items-center gap-1">
                   <TrendingUp className="w-4 h-4" />
                   Para Negocios
@@ -166,7 +166,7 @@ const AIChatbots = () => {
             </div>
 
             <div className="p-8">
-              <h3 className="text-3xl font-black mb-4 text-white group-hover:text-cyan-300 transition-colors">
+              <h3 className="text-3xl font-black mb-4 text-white group-hover:text-orange-300 transition-colors">
                 Soluciones Digitales Completas para tu Negocio
               </h3>
 
@@ -204,7 +204,7 @@ const AIChatbots = () => {
 
               <Button
                 onClick={handleBusinessInfo}
-                className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white font-semibold py-6 text-lg rounded-xl shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
+                className="w-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold py-6 text-lg rounded-xl shadow-lg hover:shadow-orange-500/50 transition-all duration-300"
               >
                 <MessageSquare className="w-5 h-5 mr-2" />
                 Conocer Más Servicios
@@ -223,7 +223,7 @@ const AIChatbots = () => {
           <div className="glass-effect rounded-2xl p-8 max-w-4xl mx-auto border border-white/10">
             <div className="flex flex-wrap justify-center gap-8 items-center">
               <div className="flex items-center gap-3">
-                <Clock className="w-8 h-8 text-cyan-400" />
+                <Clock className="w-8 h-8 text-orange-400" />
                 <div className="text-left">
                   <p className="font-bold text-white text-lg">24/7</p>
                   <p className="text-sm text-gray-400">Disponibilidad</p>
@@ -231,7 +231,7 @@ const AIChatbots = () => {
               </div>
               <div className="w-px h-12 bg-white/20 hidden sm:block"></div>
               <div className="flex items-center gap-3">
-                <Bell className="w-8 h-8 text-purple-400" />
+                <Bell className="w-8 h-8 text-blue-400" />
                 <div className="text-left">
                   <p className="font-bold text-white text-lg">Notificaciones</p>
                   <p className="text-sm text-gray-400">Tiempo Real</p>

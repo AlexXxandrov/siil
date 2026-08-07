@@ -10,7 +10,7 @@ const PortfolioItem = ({ title, category, description, image, icon: Icon, delay 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay }}
-      className="group relative rounded-2xl overflow-hidden bg-slate-900/50 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300"
+      className="group relative rounded-2xl overflow-hidden bg-slate-900/50 border border-slate-700/50 hover:border-orange-500/50 transition-all duration-300"
     >
       <div className="relative h-56 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10" />
@@ -18,14 +18,14 @@ const PortfolioItem = ({ title, category, description, image, icon: Icon, delay 
           {image}
         </div>
         <div className="absolute top-4 left-4 z-20 glass-effect px-3 py-1 rounded-full flex items-center gap-2">
-          <Icon className="w-3 h-3 text-cyan-300" />
+          <Icon className="w-3 h-3 text-orange-300" />
           <span className="text-xs font-semibold text-white">{category}</span>
         </div>
       </div>
 
       <div className="p-6 relative z-20 -mt-12">
         <div className="glass-effect p-4 rounded-xl mb-4 border border-white/10">
-          <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+          <h3 className="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
             {title}
           </h3>
           <p className="text-sm text-gray-300 line-clamp-2">
@@ -94,7 +94,7 @@ const WebPortfolio = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 mb-4">
             <Globe className="w-4 h-4" />
             <span className="text-sm font-semibold">Portafolio Digital</span>
           </div>
@@ -125,7 +125,7 @@ const WebPortfolio = () => {
           <Button 
             onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
             size="lg" 
-            className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:shadow-lg hover:shadow-cyan-500/25 text-lg px-8 py-6 rounded-full"
+            className="bg-gradient-to-r from-orange-500 to-amber-500 hover:shadow-lg hover:shadow-orange-500/25 text-lg px-8 py-6 rounded-full"
           >
             ¿Quieres un sitio como estos? ¡Contáctanos!
           </Button>

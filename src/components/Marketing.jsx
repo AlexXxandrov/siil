@@ -47,7 +47,7 @@ import React from 'react';
                 className="glass-effect rounded-2xl p-8 hover:glow-effect transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-gradient-to-br from-pink-500 to-rose-500 p-3 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-3 rounded-xl">
                     <Palette className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-3xl font-bold text-white">Diseño Gráfico y Branding</h3>
@@ -59,7 +59,7 @@ import React from 'react';
                   {designFeatures.map((item, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <div className="bg-gray-800 rounded-full p-2">
-                        <item.icon className="w-5 h-5 text-pink-400" />
+                        <item.icon className="w-5 h-5 text-blue-400" />
                       </div>
                       <span className="text-lg text-gray-200">{item.text}</span>
                     </li>
@@ -75,7 +75,7 @@ import React from 'react';
                 className="glass-effect rounded-2xl p-8 hover:glow-effect transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 p-3 rounded-xl">
+                  <div className="bg-gradient-to-br from-blue-600 to-blue-500 p-3 rounded-xl">
                     <Megaphone className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-3xl font-bold text-white">Publicidad en META</h3>
@@ -87,7 +87,7 @@ import React from 'react';
                   {adFeatures.map((item, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <div className="bg-gray-800 rounded-full p-2">
-                        <item.icon className="w-5 h-5 text-indigo-400" />
+                        <item.icon className="w-5 h-5 text-orange-400" />
                       </div>
                       <span className="text-lg text-gray-200">{item.text}</span>
                     </li>
@@ -106,7 +106,7 @@ import React from 'react';
               <Button
                 onClick={scrollToContact}
                 size="lg"
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 glow-effect text-lg px-10 py-6"
+                className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 glow-effect text-lg px-10 py-6"
               >
                 Potenciar mi Negocio Ahora
               </Button>

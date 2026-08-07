@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <footer className="relative overflow-hidden bg-gradient-to-b from-transparent to-black/50 pt-20 pb-8">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-purple-900/10 to-cyan-900/10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-blue-900/10 to-amber-900/10"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
@@ -31,12 +31,12 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-gradient-to-br from-cyan-400 to-blue-600 p-2 rounded-lg glow-effect">
+              <div className="bg-gradient-to-br from-orange-400 to-amber-500 p-2 rounded-lg glow-effect">
                 <Monitor className="w-8 h-8 text-white" />
               </div>
               <div>
                 <span className="text-2xl font-bold text-gradient">LEAO</span>
-                <p className="text-xs text-cyan-300">Soluciones Informáticas</p>
+                <p className="text-xs text-orange-300">Soluciones Informáticas</p>
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -51,7 +51,7 @@ const Footer = () => {
                   className="w-10 h-10 glass-effect rounded-lg flex items-center justify-center hover:glow-effect transition-all"
                   aria-label={social.label}
                 >
-                  <social.icon className="w-5 h-5 text-cyan-400" />
+                  <social.icon className="w-5 h-5 text-orange-400" />
                 </motion.a>
               ))}
             </div>
@@ -69,9 +69,9 @@ const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-cyan-400 transition-colors flex items-center gap-2 group"
+                    className="text-gray-400 hover:text-orange-400 transition-colors flex items-center gap-2 group"
                   >
-                    <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-orange-400 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     {link.name}
                   </a>
                 </li>
@@ -87,11 +87,11 @@ const Footer = () => {
           >
             <span className="text-xl font-bold text-gradient mb-6 block">Servicios</span>
             <ul className="space-y-3">
-              <li className="text-gray-400 hover:text-cyan-400 transition-colors cursor-pointer">Mantenimiento</li>
-              <li className="text-gray-400 hover:text-cyan-400 transition-colors cursor-pointer">Reparación</li>
-              <li className="text-gray-400 hover:text-cyan-400 transition-colors cursor-pointer">Venta de Equipos</li>
-              <li className="text-gray-400 hover:text-cyan-400 transition-colors cursor-pointer">Videovigilancia</li>
-              <li className="text-gray-400 hover:text-cyan-400 transition-colors cursor-pointer">Desarrollo Web</li>
+              <li className="text-gray-400 hover:text-orange-400 transition-colors cursor-pointer">Mantenimiento</li>
+              <li className="text-gray-400 hover:text-orange-400 transition-colors cursor-pointer">Reparación</li>
+              <li className="text-gray-400 hover:text-orange-400 transition-colors cursor-pointer">Venta de Equipos</li>
+              <li className="text-gray-400 hover:text-orange-400 transition-colors cursor-pointer">Videovigilancia</li>
+              <li className="text-gray-400 hover:text-orange-400 transition-colors cursor-pointer">Desarrollo Web</li>
             </ul>
           </motion.div>
 
@@ -104,11 +104,11 @@ const Footer = () => {
             <span className="text-xl font-bold text-gradient mb-6 block">Contacto</span>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400">
-                <Mail className="w-5 h-5 text-cyan-400 mt-0.5" />
+                <Mail className="w-5 h-5 text-orange-400 mt-0.5" />
                 <span>contacto@leao.com.mx</span>
               </li>
               <li className="flex items-start gap-3 text-gray-400">
-                <MapPin className="w-5 h-5 text-cyan-400 mt-0.5" />
+                <MapPin className="w-5 h-5 text-orange-400 mt-0.5" />
                 <span>Toluca, México</span>
               </li>
               <li className="flex items-start gap-3 text-gray-400 hover:text-green-400 transition-colors">
@@ -127,8 +127,8 @@ const Footer = () => {
               © {currentYear} Soluciones Integrales en Informática LEAO. Todos los derechos reservados.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Política de Privacidad</a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Términos de Servicio</a>
+              <a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Política de Privacidad</a>
+              <a href="#" className="text-gray-400 hover:text-orange-400 transition-colors">Términos de Servicio</a>
             </div>
           </div>
         </div>

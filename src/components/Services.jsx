@@ -25,7 +25,7 @@ const ServiceCard = ({ icon: Icon, title, description, color, features, image, o
       </div>
 
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-cyan-400 transition-colors">
+        <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-orange-400 transition-colors">
           {title}
         </h3>
 
@@ -35,8 +35,8 @@ const ServiceCard = ({ icon: Icon, title, description, color, features, image, o
 
         <ul className="space-y-2 mb-6">
           {features.map((feature, idx) => (
-            <li key={idx} className="flex items-center gap-2 text-sm text-cyan-300">
-              <div className="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>
+            <li key={idx} className="flex items-center gap-2 text-sm text-orange-300">
+              <div className="w-1.5 h-1.5 rounded-full bg-orange-400"></div>
               {feature}
             </li>
           ))}
@@ -86,7 +86,7 @@ const Services = () => {
               icon={Wrench}
               title="Mantenimiento y Reparación"
               description="Diagnóstico, reparación y mantenimiento preventivo de equipos de cómputo. Soluciones rápidas y efectivas."
-              color="from-cyan-500 to-blue-600"
+              color="from-orange-500 to-amber-500"
               features={['Diagnóstico gratuito', 'Reparación en sitio', 'Garantía de servicio']}
               image={<img alt="Técnico reparando computadora hardware" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1654593114209-d915f46be333" />}
               onClick={() => handleServiceClick('Mantenimiento y Reparación')}
@@ -97,7 +97,7 @@ const Services = () => {
               icon={ShoppingCart}
               title="Venta de Computadoras"
               description="Equipos de última generación, laptops, desktops y accesorios. Asesoría personalizada según tus necesidades."
-              color="from-purple-500 to-pink-600"
+              color="from-blue-600 to-blue-500"
               features={['Equipos nuevos', 'Garantía directa', 'Asesoría experta']}
               image={<img alt="Modern computer store display with laptops and gaming pcs" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1636036707395-ce81220e1d34" />}
               onClick={() => handleServiceClick('Venta de Computadoras')}
@@ -119,7 +119,7 @@ const Services = () => {
               icon={Globe}
               title="Desarrollo Web"
               description="Creación de sitios web profesionales, tiendas online y aplicaciones web a medida."
-              color="from-green-500 to-emerald-600"
+              color="from-emerald-500 to-teal-600"
               features={['Diseño responsivo', 'SEO optimizado', 'Hosting incluido']}
               image={<img alt="Web developer coding on multiple screens" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1687006067259-6de13ca3875e" />}
               onClick={() => handleServiceClick('Desarrollo Web')}
@@ -130,7 +130,7 @@ const Services = () => {
               icon={DatabaseZap}
               title="Recuperación de Datos"
               description="Servicio especializado para recuperar información valiosa de discos duros dañados, SSD, USB y más."
-              color="from-yellow-500 to-amber-600"
+              color="from-amber-500 to-orange-500"
               features={['Diagnóstico avanzado', 'Alta tasa de éxito', 'Confidencialidad garantizada']}
               image={<img alt="Data recovery specialist working on hard drive" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1674090943759-a3d29c43d7d3" />}
               onClick={() => handleServiceClick('Recuperación de Datos')}
@@ -141,7 +141,7 @@ const Services = () => {
               icon={Palette}
               title="Diseño Gráfico y Branding"
               description="Creación de logos, identidad de marca y material gráfico para que tu negocio destaque con un estilo único."
-              color="from-pink-500 to-rose-500"
+              color="from-blue-500 to-blue-600"
               features={['Diseño de logos', 'Branding estratégico', 'Edición gráfica profesional']}
               image={<img alt="Graphic designer working on branding" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1681142991801-02bba158bdf7" />}
               onClick={() => handleServiceClick('Diseño Gráfico y Branding')}
@@ -152,7 +152,7 @@ const Services = () => {
               icon={Megaphone}
               title="Publicidad en META ADS"
               description="Creamos y gestionamos campañas publicitarias en Facebook, Instagram, Messenger y WhatsApp."
-              color="from-indigo-500 to-fuchsia-500"
+              color="from-blue-600 to-blue-500"
               features={['Gestión de campañas', 'Anuncios efectivos', 'Optimización de presupuesto']}
               image={<img alt="Digital marketing analytics on screen" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0" />}
               onClick={() => handleServiceClick('Publicidad en META ADS')}
@@ -163,7 +163,7 @@ const Services = () => {
               icon={Cpu}
               title="Actualización de Hardware"
               description="Mejora el rendimiento de tu equipo con actualizaciones de RAM, SSD, tarjetas gráficas y más componentes."
-              color="from-blue-500 to-indigo-600"
+              color="from-blue-600 to-blue-500"
               features={['Componentes originales', 'Instalación profesional', 'Asesoría técnica']}
               image={<img alt="Installing new computer hardware components" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1591108063516-01f8a675395b" />}
               onClick={() => handleServiceClick('Actualización de Hardware')}
@@ -174,7 +174,7 @@ const Services = () => {
               icon={Shield}
               title="Seguridad Informática"
               description="Protección contra virus, malware y amenazas cibernéticas. Respaldo de datos y recuperación de información."
-              color="from-red-500 to-rose-600"
+              color="from-orange-500 to-red-500"
               features={['Antivirus empresarial', 'Backup automático', 'Análisis de vulnerabilidades']}
               image={<img alt="Cybersecurity shield concept" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1614064548237-096f735f344f" />}
               onClick={() => handleServiceClick('Seguridad Informática')}

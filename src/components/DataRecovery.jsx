@@ -19,10 +19,10 @@ const DataRecovery = () => {
   };
 
   return (
-    <section id="data-recovery" className="py-24 bg-gradient-to-br from-blue-900/30 via-indigo-950 to-slate-900 relative overflow-hidden">
+    <section id="data-recovery" className="py-24 bg-gradient-to-br from-blue-950 via-slate-900 to-slate-950 relative overflow-hidden">
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute -top-20 -left-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-purple-600 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute -top-20 -left-20 w-96 h-96 bg-orange-500 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-blue-600 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -66,7 +66,7 @@ const DataRecovery = () => {
                   transition={{ delay: 0.4 + index * 0.1 }}
                   className="flex items-center gap-3 glass-effect p-4 rounded-lg"
                 >
-                  <item.icon className="w-6 h-6 text-cyan-400" />
+                  <item.icon className="w-6 h-6 text-orange-400" />
                   <span className="font-semibold text-white">{item.label}</span>
                 </motion.div>
               ))}
@@ -77,7 +77,7 @@ const DataRecovery = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 glow-effect text-lg px-8"
+              className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 glow-effect text-lg px-8"
             >
               Solicitar Diagnóstico
             </Button>
