@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bot, MessageSquare, Clock, Sparkles, TrendingUp, Zap, GraduationCap, Store, Utensils, Stethoscope, Building2, Dumbbell, MousePointerClick } from 'lucide-react';
+import { Bot, MessageSquare, Clock, Sparkles, TrendingUp, Zap, GraduationCap, Store, Utensils, Stethoscope, Building2, Dumbbell, MousePointerClick, MessageCircle, Check, CheckCheck, Bell, FileSpreadsheet } from 'lucide-react';
+
+const LEO_WHATSAPP = '527225596407';
 
 const industries = [
   { icon: GraduationCap, label: 'Escuelas' },
@@ -191,6 +193,173 @@ const ChatbotsShowcase = () => {
             </motion.div>
           </motion.div>
         </div>
+
+        {/* Apartado: Integración con WhatsApp */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-24 max-w-7xl mx-auto"
+        >
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 mb-6">
+              <MessageCircle className="w-5 h-5 text-green-400" />
+              <span className="text-sm font-semibold text-green-300">Integración con WhatsApp</span>
+            </div>
+            <h3 className="text-3xl md:text-5xl font-black mb-6">
+              <span className="text-white">Tu Chatbot También Contesta por</span>{' '}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-500">WhatsApp</span>
+            </h3>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Donde están tus clientes. El chatbot responde automáticamente en el WhatsApp de tu negocio,
+              atiende dudas y guarda cada prospecto — sin que tú tengas que estar pegado al teléfono.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Izquierda: cómo funciona */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className="space-y-6 mb-8">
+                {[
+                  {
+                    icon: MessageCircle,
+                    title: 'Responde en tu WhatsApp de Negocio',
+                    description: 'Usamos la API oficial de WhatsApp Business (Meta). El cliente escribe a tu número y el bot contesta al instante.',
+                  },
+                  {
+                    icon: Bell,
+                    title: 'Te Avisa de Cada Prospecto',
+                    description: 'Cuando alguien deja sus datos, recibes una notificación en tiempo real para que le des seguimiento.',
+                  },
+                  {
+                    icon: FileSpreadsheet,
+                    title: 'Guarda Todo Automáticamente',
+                    description: 'Cada conversación y cada lead queda registrado en tu base de datos. Nada se pierde.',
+                  },
+                ].map((item, index) => (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 * index }}
+                    className="flex items-start gap-4 group"
+                  >
+                    <div className="bg-gradient-to-br from-green-500 to-emerald-600 w-12 h-12 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                      <item.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-lg mb-1">{item.title}</h4>
+                      <p className="text-gray-400 leading-relaxed">{item.description}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+
+              <a
+                href={`https://wa.me/${LEO_WHATSAPP}?text=Hola,%20quiero%20probar%20el%20chatbot%20de%20LEAO`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg shadow-green-500/30 transition-all duration-300 hover:scale-105"
+              >
+                <MessageCircle className="w-6 h-6" />
+                Prueba a Leo en WhatsApp
+              </a>
+              <p className="text-sm text-gray-400 mt-3">
+                Escríbele "Hola" y mira cómo te responde en segundos 👇
+              </p>
+            </motion.div>
+
+            {/* Derecha: simulación de chat de WhatsApp */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="relative"
+            >
+              <div className="max-w-sm mx-auto rounded-[2rem] overflow-hidden shadow-2xl border-8 border-slate-800 bg-slate-800">
+                {/* Header estilo WhatsApp */}
+                <div className="bg-[#075E54] px-4 py-3 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center shrink-0">
+                    <Bot className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-grow">
+                    <p className="text-white font-semibold text-sm">Leo · LEAO</p>
+                    <p className="text-green-200 text-xs">en línea</p>
+                  </div>
+                  <MessageCircle className="w-5 h-5 text-green-200" />
+                </div>
+
+                {/* Fondo de chat */}
+                <div className="bg-[#ECE5DD] px-3 py-4 space-y-2" style={{ minHeight: '420px' }}>
+                  {/* Mensaje cliente */}
+                  <div className="flex justify-end">
+                    <div className="bg-[#DCF8C6] rounded-lg rounded-tr-none px-3 py-2 max-w-[75%] shadow-sm">
+                      <p className="text-sm text-gray-800">Hola, ¿hacen páginas web?</p>
+                      <div className="flex items-center justify-end gap-1 mt-1">
+                        <span className="text-[10px] text-gray-500">10:32</span>
+                        <CheckCheck className="w-3 h-3 text-blue-500" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Respuesta Leo */}
+                  <div className="flex justify-start">
+                    <div className="bg-white rounded-lg rounded-tl-none px-3 py-2 max-w-[80%] shadow-sm">
+                      <p className="text-sm text-gray-800">¡Hola! 👋 Claro que sí. En LEAO creamos sitios web profesionales, responsivos y optimizados. ¿Para qué tipo de negocio lo necesitas?</p>
+                      <span className="text-[10px] text-gray-500 block text-right mt-1">10:32</span>
+                    </div>
+                  </div>
+
+                  {/* Mensaje cliente */}
+                  <div className="flex justify-end">
+                    <div className="bg-[#DCF8C6] rounded-lg rounded-tr-none px-3 py-2 max-w-[75%] shadow-sm">
+                      <p className="text-sm text-gray-800">Para mi restaurante 🍽️</p>
+                      <div className="flex items-center justify-end gap-1 mt-1">
+                        <span className="text-[10px] text-gray-500">10:33</span>
+                        <CheckCheck className="w-3 h-3 text-blue-500" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Respuesta Leo */}
+                  <div className="flex justify-start">
+                    <div className="bg-white rounded-lg rounded-tl-none px-3 py-2 max-w-[80%] shadow-sm">
+                      <p className="text-sm text-gray-800">¡Excelente! 🎉 Podemos incluir menú digital, reservas en línea y galería de platillos. ¿Me compartes tu nombre y teléfono para que un asesor te dé una cotización?</p>
+                      <span className="text-[10px] text-gray-500 block text-right mt-1">10:33</span>
+                    </div>
+                  </div>
+
+                  {/* Indicador escribiendo */}
+                  <div className="flex justify-start">
+                    <div className="bg-white rounded-full px-4 py-2 shadow-sm">
+                      <div className="flex gap-1">
+                        <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
+                        <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
+                        <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Badge flotante */}
+              <motion.div
+                animate={{ y: [0, -8, 0] }}
+                transition={{ duration: 3, repeat: Infinity }}
+                className="absolute -top-2 -right-2 md:right-8 glass-effect rounded-2xl p-3 glow-effect-blue"
+              >
+                <p className="text-sm font-semibold text-green-300">✓ Respuesta automática</p>
+              </motion.div>
+            </motion.div>
+          </div>
+        </motion.div>
 
         {/* CTA final */}
         <motion.div
