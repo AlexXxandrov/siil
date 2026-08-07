@@ -5,21 +5,36 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-950 text-white;
+  @apply text-white;
+  background: linear-gradient(to bottom right, #0A1628, #0A2540, #0D1B2A);
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
 }
 
 @layer utilities {
+  /* Gradiente principal: navy a naranja para acentos de texto */
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600;
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, #F5822E, #FF9D4D);
   }
-  
+
+  /* Gradiente alternativo azul para títulos secundarios */
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, #2E90D9, #1D6FA5);
+  }
+
   .glass-effect {
-    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
   }
-  
+
+  /* Glow naranja para elementos destacados */
   .glow-effect {
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+    box-shadow: 0 0 30px rgba(245, 130, 46, 0.25);
+  }
+
+  /* Glow azul para elementos secundarios */
+  .glow-effect-blue {
+    box-shadow: 0 0 30px rgba(29, 111, 165, 0.3);
   }
 }

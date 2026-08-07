@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import TrustBadges from '@/components/TrustBadges';
 import AIChatbots from '@/components/AIChatbots';
 import Services from '@/components/Services';
 import WebPortfolio from '@/components/WebPortfolio';
@@ -10,6 +11,7 @@ import WebApps from '@/components/WebApps';
 import DataRecovery from '@/components/DataRecovery';
 import Marketing from '@/components/Marketing';
 import About from '@/components/About';
+import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -25,6 +27,7 @@ function App() {
       <div className="min-h-screen">
         <Header />
         <Hero />
+        <TrustBadges />
         <AIChatbots />
         <Services />
         <WebPortfolio />
@@ -33,6 +36,7 @@ function App() {
         <DataRecovery />
         <Marketing />
         <About />
+        <Testimonials />
         <Contact />
         <Footer />
         <WhatsAppButton />
