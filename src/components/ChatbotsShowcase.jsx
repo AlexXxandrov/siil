@@ -160,7 +160,7 @@ const ChatbotsShowcase = () => {
                   <span className="text-sm font-bold text-orange-300">Nova — Pruébame en Vivo</span>
                 </div>
               </div>
-              <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: '520px' }}>
+              <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: '650px' }}>
                 <iframe
                   className="w-full h-full border-0"
                   src="https://nova-production-80d3.up.railway.app/"

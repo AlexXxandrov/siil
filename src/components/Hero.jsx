@@ -117,7 +117,7 @@ const Hero = () => {
               <div className="text-center mb-3">
                 <span className="text-sm font-bold text-orange-300">💬 Chatea con Leo — Asistente IA de LEAO</span>
               </div>
-              <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: '500px' }}>
+              <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: '650px' }}>
                 <iframe
                   className="w-full h-full border-0"
                   src="https://chatbotsiilleao-production.up.railway.app"
