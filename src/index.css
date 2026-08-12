@@ -6,35 +6,40 @@
 
 body {
   @apply text-white;
-  background: linear-gradient(to bottom right, #0A1628, #0A2540, #0D1B2A);
+  background: linear-gradient(to bottom right, #071120, #0A2540, #0B1E33);
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
 }
 
 @layer utilities {
-  /* Gradiente principal: navy a naranja para acentos de texto */
+  /* Gradiente principal: naranja vivo y saturado para acentos de texto */
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(to right, #F5822E, #FF9D4D);
+    background-image: linear-gradient(to right, #FF7A18, #FFB347);
   }
 
-  /* Gradiente alternativo azul para títulos secundarios */
+  /* Gradiente alternativo azul brillante para títulos secundarios */
   .text-gradient-blue {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(to right, #2E90D9, #1D6FA5);
+    background-image: linear-gradient(to right, #38BDF8, #2E90D9);
   }
 
   .glass-effect {
     @apply bg-white/5 backdrop-blur-lg border border-white/10;
   }
 
-  /* Glow naranja para elementos destacados */
+  /* Glow naranja más intenso para elementos destacados */
   .glow-effect {
-    box-shadow: 0 0 30px rgba(245, 130, 46, 0.25);
+    box-shadow: 0 0 40px rgba(255, 122, 24, 0.4);
   }
 
-  /* Glow azul para elementos secundarios */
+  /* Glow azul brillante para elementos secundarios */
   .glow-effect-blue {
-    box-shadow: 0 0 30px rgba(29, 111, 165, 0.3);
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.35);
+  }
+
+  /* Glow verde para WhatsApp / éxito */
+  .glow-effect-green {
+    box-shadow: 0 0 40px rgba(34, 197, 94, 0.35);
   }
 }
