@@ -52,7 +52,7 @@ const AIChatbots = () => {
 
   return (
     <section id="chatbots-ia" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-800/25 to-transparent"></div>
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDEzNGgyLTJ6bTAtNWgyLTJ6bTAgMTBoMi0yem0wLTIwaDItMnptMCAxMGgyLTJ6bTAtMTVoMi0yem0wIDIwaDItMnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
 
       <div className="container mx-auto px-4 relative z-10">

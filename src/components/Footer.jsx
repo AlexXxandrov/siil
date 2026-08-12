@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <footer className="relative overflow-hidden bg-gradient-to-b from-transparent to-black/50 pt-20 pb-8">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-blue-900/10 to-amber-900/10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-blue-800/20 to-amber-900/10"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-4 gap-12 mb-12">

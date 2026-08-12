@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bot, MessageSquare, Clock, Sparkles, TrendingUp, Zap, GraduationCap, Store, Utensils, Stethoscope, Building2, Dumbbell, MousePointerClick, MessageCircle, Check, CheckCheck, Bell, FileSpreadsheet } from 'lucide-react';
+import { Bot, MessageSquare, Clock, Sparkles, TrendingUp, Zap, GraduationCap, Store, Utensils, Stethoscope, Building2, Dumbbell, MousePointerClick, MessageCircle, Check, CheckCheck, Bell, FileSpreadsheet, ArrowRight } from 'lucide-react';
 
 const LEO_WHATSAPP = '527225596407';
 
@@ -16,7 +16,7 @@ const industries = [
 const ChatbotsShowcase = () => {
   return (
     <section id="chatbots-showcase" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-800/25 to-transparent"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -359,6 +359,53 @@ const ChatbotsShowcase = () => {
               </motion.div>
             </motion.div>
           </div>
+        </motion.div>
+
+        {/* Banner: Galería de Chatbots (subdominio) */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-24 max-w-5xl mx-auto"
+        >
+          <a
+            href="https://chatbots.leao.com.mx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block relative overflow-hidden rounded-3xl border border-orange-500/30 hover:border-orange-400/60 transition-all duration-300"
+          >
+            {/* Fondo con gradiente vivo */}
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 via-blue-600/20 to-purple-600/20"></div>
+            <div className="absolute inset-0 opacity-40">
+              <div className="absolute top-0 right-0 w-72 h-72 bg-orange-500/30 rounded-full blur-3xl group-hover:bg-orange-500/40 transition-all"></div>
+              <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl group-hover:bg-blue-500/40 transition-all"></div>
+            </div>
+
+            <div className="relative z-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-grow text-center md:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-400 mb-4 shadow-lg shadow-orange-500/40 animate-pulse">
+                  <Sparkles className="w-4 h-4 text-white" />
+                  <span className="text-xs font-bold text-white uppercase tracking-wide">Nuevo · Galería</span>
+                </div>
+                <h3 className="text-3xl md:text-4xl font-black text-white mb-3">
+                  Explora Todos Nuestros <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-amber-300 to-orange-500">Chatbots</span>
+                </h3>
+                <p className="text-lg text-gray-200 leading-relaxed max-w-2xl">
+                  Descubre la galería completa con todas las capacidades de nuestros asistentes con IA:
+                  atención a clientes, captura de leads, reservas, soporte y mucho más. Un chatbot para cada tipo de negocio.
+                </p>
+              </div>
+
+              <div className="shrink-0">
+                <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-amber-500 group-hover:from-orange-600 group-hover:to-amber-600 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg shadow-orange-500/40 transition-all duration-300 group-hover:scale-105">
+                  <Bot className="w-6 h-6" />
+                  Ver Galería
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </div>
+                <p className="text-center text-xs text-gray-300 mt-2">chatbots.leao.com.mx</p>
+              </div>
+            </div>
+          </a>
         </motion.div>
 
         {/* CTA final */}

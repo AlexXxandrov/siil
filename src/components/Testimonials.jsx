@@ -40,7 +40,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section id="testimonios" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-900/10 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-800/20 to-transparent"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
